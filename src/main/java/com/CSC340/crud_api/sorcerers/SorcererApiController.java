@@ -1,4 +1,4 @@
-package Sorcerers;
+package com.CSC340.crud_api.sorcerers;
 
 import java.util.List;
 
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("api/sorcerers")
 public class SorcererApiController {
-    
+
     private final SorcererService sorcererService;
 
     public SorcererApiController(SorcererService sorcererService) {

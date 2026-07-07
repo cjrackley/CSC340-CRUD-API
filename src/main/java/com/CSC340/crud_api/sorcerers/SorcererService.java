@@ -1,4 +1,4 @@
-package Sorcerers;
+package com.CSC340.crud_api.sorcerers;
 
 import java.util.List;
 
