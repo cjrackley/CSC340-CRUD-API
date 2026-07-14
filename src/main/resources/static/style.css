@@ -1,0 +1,258 @@
+:root {
+    --dark-grey: #333333;
+    --purple: #a259ff;
+}
+
+/* Keep footer pinned to the bottom of the page */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-grey);
+    color: #ffffff;
+}
+
+/* ===== Navbar ===== */
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    background-color: var(--dark-grey);
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.nav button {
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.nav button:hover {
+    color: var(--purple);
+}
+
+/* ===== Intro ===== */
+.intro {
+    text-align: center;
+}
+
+/* ===== Search ===== */
+.search {
+    text-align: center;
+    background-color: var(--dark-grey);
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.search input {
+    width: 80%;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #555555;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.categories {
+    margin-top: 0.5rem;
+}
+
+.search .categories button {
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.search .categories button:hover {
+    color: var(--purple);
+}
+
+/* ===== Cards ===== */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 320px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background-color: var(--dark-grey);
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.index-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card span {
+    display: inline-block;
+    background-color: var(--dark-grey);
+    color: #eeeeee;
+    border: 2px solid var(--purple);
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+}
+
+.card button {
+    background-color: var(--purple);
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* ===== About page ===== */
+.about-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+.about-main img {
+    height: 33vh;
+    width: auto;
+    max-width: 100%;
+    border-radius: 12px;
+    margin-top: 1rem;
+}
+
+/* ===== Details profile ===== */
+.details-main {
+    flex: 1;
+}
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+    background-color: var(--dark-grey);
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.profile-image {
+    flex: 0 0 auto;
+}
+
+.profile-image img {
+    width: 350px;
+    max-width: 100%;
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.back button {
+    background-color: var(--purple);
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* ===== New character form ===== */
+.form-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.form-intro {
+    text-align: center;
+}
+
+.form-card {
+    width: 420px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background-color: var(--dark-grey);
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.form-card form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-card label {
+    width: 80%;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+.form-card input,
+.form-card select {
+    width: 80%;
+    box-sizing: border-box;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #555555;
+    color: #ffffff;
+    font-size: 1rem;
+    margin-top: 0.25rem;
+}
+
+.form-buttons {
+    margin-top: 1rem;
+}
+
+.form-buttons button {
+    background-color: var(--purple);
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* ===== Footer ===== */
+.footer {
+    margin-top: auto;
+    background-color: var(--dark-grey);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.4);
+}

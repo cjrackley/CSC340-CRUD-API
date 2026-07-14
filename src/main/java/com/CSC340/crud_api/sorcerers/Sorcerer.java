@@ -31,6 +31,9 @@ public class Sorcerer {
     @Column()
     private String grade;
 
+    @Column()
+    private String image;
+
     public Sorcerer(String name, String description, double age, String grade) {
         this.name = name;
         this.description = description;
